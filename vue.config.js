@@ -1,4 +1,5 @@
 const path = require("path");
+const webpack = require("webpack");
 
 module.exports = {
   chainWebpack: (config) => {
@@ -8,6 +9,16 @@ module.exports = {
     });
   },
   lintOnSave: false,
+  configureWebpack: {
+    plugins: [
+      new webpack.ProvidePlugin({
+        $: "jquery",
+        jquery: "jquery",
+        "window.jQuery": "jquery",
+        jQuery: "jquery",
+      }),
+    ],
+  },
   css: {
     loaderOptions: {
       sass: {

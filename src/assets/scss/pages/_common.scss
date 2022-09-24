@@ -5,21 +5,30 @@
     section - default style
 ****************************************************************************/
 .l-section {
-  padding: 10rem 0;
+  padding: px2rem(80) 0 px2rem(40);
   &__title {
-    margin-bottom: px2rem(15);
+    margin-bottom: px2rem(20);
     font-family: "Jost";
-    font-size: px2rem(22);
+    font-size: px2rem(28);
     font-weight: 300;
     text-align: center;
     line-height: 1em;
     letter-spacing: 0.2em;
   }
   &__description {
-    margin-bottom: px2rem(50);
-    font-size: px2rem(14);
+    margin-bottom: px2rem(45);
+    font-size: px2rem(16);
     font-weight: 400;
     text-align: center;
-    line-height: 2em;
+    line-height: 1.6em;
+  }
+  &:not(.is-appear) {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  &.is-appear {
+    opacity: 1;
+    transform: translateY(0);
+    @include transition($time: 0.5);
   }
 }
