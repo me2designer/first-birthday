@@ -21,7 +21,7 @@
         <li class="days-list__item is-disable">29</li>
         <li class="days-list__item is-disable">30</li>
         <li class="days-list__item">1</li>
-        <li class="days-list__item is-holiday" tooltip="개천절">2</li>
+        <li class="days-list__item is-holiday" tooltip="하민이 생파">2</li>
         <li class="days-list__item is-today">3</li>
         <li class="days-list__item">4</li>
         <li class="days-list__item">5</li>
@@ -162,7 +162,7 @@ export default {
           top: px2rem(-40);
           left: calc(50% + #{px2rem(50)});
           z-index: 20;
-          width: 5.5rem;
+          width: 8.5rem;
           padding: px2rem(5) px2rem(10);
           border-radius: px2rem(5);
           font-size: px2rem(13);
