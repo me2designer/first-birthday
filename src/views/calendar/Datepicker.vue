@@ -113,7 +113,7 @@ export default {
             z-index: -1;
             width: px2rem(45);
             height: px2rem(45);
-            border: px2rem(2) dashed #000;
+            border: px2rem(2) dashed #ff0331;
             border-radius: 100%;
             transform: translate(-50%, -50%) rotate(0deg);
 
@@ -121,18 +121,7 @@ export default {
             animation: $name 3s infinite linear;
 
             @keyframes #{$name} {
-              0% {
-                border-style: dashed;
-                border-color: #000;
-              }
-              25%,
-              75% {
-                border-style: solid;
-                border-color: #ff0331;
-              }
               100% {
-                border-style: dashed;
-                border-color: #000;
                 transform: translate(-50%, -50%) rotate(360deg);
               }
             }
