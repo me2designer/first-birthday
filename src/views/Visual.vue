@@ -1,7 +1,7 @@
 <template>
   <section class="visual l-section js-is-appear">
     <div class="inner">
-      <p class="visual__txt visual__txt--headline">HAPPY BIRSDAY</p>
+      <p class="visual__txt visual__txt--headline">HAPPY BIRTHDAY</p>
       <img class="visual__txt visual__txt--title" src="@/assets/images/visual_txt_title.png" alt="하민이 첫번째 생일에 초대합니다." />
       <img class="visual__txt visual__txt--parents" src="@/assets/images/visual_txt_parents.png" alt="아빠 장지훈, 엄마 한인애" />
     </div>
