@@ -1,22 +1,29 @@
 <template>
-  <div id="wrap" data-target-device="mo" user-scalable="false">
+  <main id="container" role="main">
+    <h2 class="visually-hidden">초청장</h2>
     <Visual></Visual>
     <Calendar></Calendar>
     <Location></Location>
-  </div>
+    <!-- <Gallery></Gallery> -->
+  </main>
+  <Footer></Footer>
 </template>
 
 <script>
 import Visual from "./views/Visual.vue";
 import Calendar from "./views/Calendar.vue";
 import Location from "./views/Location.vue";
+import Gallery from "./views/Gallery.vue";
+import Footer from "./components/layout/Footer.vue";
 
 export default {
-  name: "App",
+  name: "wrap",
   components: {
     Visual,
     Calendar,
     Location,
+    Gallery,
+    Footer,
   },
   mounted() {
     this.onCommonJs();

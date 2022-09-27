@@ -48,13 +48,15 @@ body {
 #container {
   position: relative;
   z-index: 20;
-  padding-top: $G-header-height;
+  // padding-top: $G-header-height;
+  padding-bottom: $G-footer-height;
   background-color: #fff;
 }
 
 #footer {
   position: relative;
   z-index: 10;
+  height: $G-footer-height;
 }
 
 .inner {

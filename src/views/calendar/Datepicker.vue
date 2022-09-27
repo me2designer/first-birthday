@@ -1,5 +1,5 @@
 <template>
-  <section class="datepicker js-is-appear">
+  <section class="datepicker">
     <header class="datepicker-header">
       <p class="month">10</p>
     </header>
@@ -197,9 +197,12 @@ export default {
   }
   .is-appear & {
     .weekly-list__item {
+      opacity: 1;
+      transform: translateY(0);
+
       @for $i from 0 through 10 {
         &:nth-child(#{$i}) {
-          @include transition($delay: #{$i * 0.05});
+          @include transition($delay: #{$i * 0.05 + 0.35});
         }
       }
     }
@@ -209,7 +212,7 @@ export default {
 
       @for $i from 0 through 40 {
         &:nth-child(#{$i}) {
-          @include transition($delay: #{$i * 0.05 + 0.35});
+          @include transition($delay: #{$i * 0.05 + 0.65});
         }
       }
     }

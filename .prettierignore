@@ -1,6 +1,7 @@
 # style
 *reset*css
 *import*scss
+_icons.scss
 fonts/
 
 index.html
