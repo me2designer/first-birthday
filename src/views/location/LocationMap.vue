@@ -1,7 +1,7 @@
 <template>
   <div class="location-map js-is-appear">
     <div class="location-map__daum"></div>
-    <a class="location-map__link" href=" https://naver.me/5iz04SCs" target="_blank"><span class="txt">지도 바로가기</span></a>
+    <a class="location-map__link" href=" https://naver.me/55y4tUBE" target="_blank"><span class="txt">지도 바로가기</span></a>
   </div>
 </template>
 
